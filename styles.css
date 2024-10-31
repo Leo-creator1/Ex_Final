@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+.header-content {
+    background-color: #343a40; /* Fondo oscuro para contraste */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-content .navbar-brand,
+.header-content .nav-link {
+    color: #ffffff;
+}
+
+.header-content .nav-link:hover {
+    color: #adb5bd; /* Color al pasar sobre el enlace */
+}
+
+.logo {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    max-height: 600px; /* Limita el alto del carrusel */
+    object-fit: cover;
+}
+
+/* Sección de Clientes */
+.container-fluid.bg-light img {
+    max-width: 150px; /* Tamaño máximo de las imágenes de clientes */
+    width: 100%; /* Responsivo */
+    height: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+/* Sección sobre nosotros */
+#sobre-nosotros h2,
+#proyectos h2,
+#contacto h2 {
+    margin-top: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#sobre-nosotros .row > div {
+    padding: 15px;
+}
+
+/* Estilos específicos para el video */
+#sobre-nosotros iframe {
+    width: 60%; /* Tamaño amplio para pantallas grandes */
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 16/9; /* Mantiene una relación de aspecto de video */
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Imagen en "Sobre Nosotros" */
+#sobre-nosotros img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Sección de Proyectos */
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para tarjetas */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover; /* Ajuste de imagen */
+}
+
+.card .card-body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.card-title {
+    color: #495057;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Contacto */
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto label {
+    color: #495057;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#contacto button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #adb5bd;
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 50px;
+    }
+
+    .carousel-inner img {
+        max-height: 400px;
+    }
+
+    #sobre-nosotros iframe {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
