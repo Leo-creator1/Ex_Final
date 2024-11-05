@@ -7,30 +7,47 @@
     <link rel="icon" href="icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Proyecto 2: Aplicación de Gestión | Solucsoft</title>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header-content">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <img src="logo.png" alt="Logo Solucsoft" class="logo">
-                <span>Servicios de Programación Solucsoft</span>
-            </a>
-            <nav aria-label="Navegación principal">
-                <ul class="nav">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="proyecto1.html" class="nav-link">Tienda en línea</a></li>
-                    <li><a href="proyecto2.html" class="nav-link active">Aplicación de Gestión</a></li>
-                    <li><a href="proyecto3.html" class="nav-link">Blog Personal</a></li>
-                </ul>
+    <header>        
+        <div class="header-content d-flex align-items-center sticky-top bg-body-tertiary">
+            <!-- Logo y título alineados a la izquierda -->
+            <div class="header-logo d-flex align-items-center me-auto">
+                <img src="logo2.png" alt="Logo de empresa" class="logo me-2">
+                <a class="navbar-brand fs-4 fw-bold text-dark" href="index.html">SOLUCSOFT</a>
+            </div>
+            
+            <!-- Barra de navegación alineada a la derecha -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyecto1.html">Tienda en línea</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyecto2.html">Aplicación de Gestión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyecto3.html">Blog Personal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-
     <!-- Contenido Principal -->
     <main class="container my-5">
-        <section class="text-center">
+        <section class="div__justify">
             <h2 class="text-dark font-weight-bold mb-4">Proyecto 2: Aplicación de Gestión</h2>
             <p class="text-justify">
                 Esta aplicación web permite gestionar inventarios y ventas en tiempo real. Incluye funcionalidades como la administración de usuarios, generación de reportes y sincronización con múltiples dispositivos.
@@ -52,18 +69,18 @@
         </section>
     </main>
 
-    <!-- Pie de Página -->
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Solucsoft. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://twitter.com" target="_blank" class="text-white mx-2">Twitter</a> |
-                <a href="https://facebook.com" target="_blank" class="text-white mx-2">Facebook</a> |
-                <a href="https://linkedin.com" target="_blank" class="text-white mx-2">LinkedIn</a> |
-                <a href="https://github.com" target="_blank" class="text-white mx-2">GitHub</a>
-            </div>
-        </div>
-    </footer>
+<!-- Pie de página -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <p>&copy; 2024 Solucsoft. Todos los derechos reservados.</p>
+    </div>
+    <div class="social-links">
+        <a href="https://x.com" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i> Twitter-X</a> |
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="bi bi-facebook"></i> Facebook</a> | 
+        <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i> LinkedIn</a> | 
+        <a href="https://github.com" target="_blank" class="social-icon"><i class="bi bi-github"></i> GitHub</a>
+    </div>
+</footer>  
 
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

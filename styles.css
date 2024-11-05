@@ -23,8 +23,12 @@ body {
 }
 
 .logo {
-    max-height: 60px;
+    max-height: 100px;
     margin-right: 10px;
+}
+.navbar-toggler {
+    margin-left: auto; /* Mueve el toggler a la derecha en pantallas pequeñas */
+    padding: 0.5rem 1rem;
 }
 
 /* Carrusel */
@@ -43,20 +47,23 @@ body {
 }
 
 /* Sección sobre nosotros */
-#sobre-nosotros h2,
-#proyectos h2,
-#contacto h2 {
+.sobre-nosotros h2,
+.proyectos h2,
+.contacto h2 {
     margin-top: 20px;
     color: #343a40;
     font-weight: bold;
 }
+.div__nosotros {
+    text-align: justify;
+}
 
-#sobre-nosotros .row > div {
+.sobre-nosotros .row > div {
     padding: 15px;
 }
 
 /* Estilos específicos para el video */
-#sobre-nosotros iframe {
+.sobre-nosotros iframe {
     width: 60%; /* Tamaño amplio para pantallas grandes */
     max-width: 600px;
     height: auto;
@@ -67,7 +74,7 @@ body {
 }
 
 /* Imagen en "Sobre Nosotros" */
-#sobre-nosotros img {
+.programador-img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -112,22 +119,25 @@ body {
 }
 
 /* Sección de Contacto */
-#contacto form {
+.contacto-section form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto; /* Centra horizontalmente */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#contacto label {
+.contacto-form {
     color: #495057;
     font-weight: bold;
+    display: flex; /*Centrar boton de enviar*/
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+
 }
 
-#contacto input,
-#contacto textarea {
+.form-control {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -135,41 +145,39 @@ body {
     border-radius: 4px;
 }
 
-#contacto button {
+
+.btn-primary {
     background-color: #007bff;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-}
-
-#contacto button:hover {
-    background-color: #0056b3;
+    cursor: pointer; 
+   
 }
 
 /* Pie de página */
-footer {
+.footer-section {
     background-color: #343a40;
     color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 
-footer p {
+.footer-content {
     margin: 0;
 }
 
-footer a {
+.social-icon {
     color: #ffffff;
     text-decoration: none;
     margin: 0 5px;
 }
 
-footer a:hover {
-    color: #adb5bd;
-    text-decoration: underline;
+.div__justify {
+    text-align: justify ;
 }
+
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -181,7 +189,7 @@ footer a:hover {
         max-height: 400px;
     }
 
-    #sobre-nosotros iframe {
+    .video-container iframe {
         width: 100%; /* Ancho completo en pantallas pequeñas */
         max-width: 100%;
     }

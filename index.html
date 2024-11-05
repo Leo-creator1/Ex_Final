@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Icono de Pagina -->
     <link rel="icon" href="icon.png" type="image/png">
-    <!-- <link rel="icon" href="assets/icons/favicon.png" type="image/png"> -->
     <title>Servicios de Informatica</title>
-
 </head>
 <body>
     <!-- Encabezado principal -->
     <header>        
         <div class="header-content d-flex align-items-center sticky-top bg-body-tertiary">
             <!-- Logo y título alineados a la izquierda -->
-            <div class="d-flex align-items-center me-auto">
+            <div class="header-logo d-flex align-items-center me-auto">
                 <img src="logo2.png" alt="Logo de empresa" class="logo me-2">
                 <a class="navbar-brand fs-4 fw-bold text-dark" href="index.html">SOLUCSOFT</a>
             </div>
@@ -27,7 +24,7 @@
             <!-- Barra de navegación alineada a la derecha -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -51,7 +48,7 @@
         </div>
     </header>
     <!-- Carrusel-->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <section id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -59,13 +56,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/slider-1.jpg" class="d-block w-100" alt="...">
+            <img src="img/slider-1.jpg" class="d-block w-100" alt="computadora-app">
           </div>
           <div class="carousel-item">
-            <img src="img/slider-2.jpg" class="d-block w-100" alt="...">
+            <img src="img/slider-2.jpg" class="d-block w-100" alt="codigos-programacion">
           </div>
           <div class="carousel-item">
-            <img src="img/slider-3.jpg" class="d-block w-100" alt="...">
+            <img src="img/slider-3.jpg" class="d-block w-100" alt="laptop-programacion">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -76,114 +73,112 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </section>
 
-      <div class="container-fluid bg-light py-5 text-center">
+    <div class="clientes-container container-fluid bg-light py-5 text-center">
         <div class="row">
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-1.png" alt="Cliente2"></div>          
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-2.png" alt="Cliente2"></div>
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-3.png" alt="Cliente2"></div>
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-4.png" alt="Cliente2"></div>
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-5.png" alt="Cliente2"></div>
-          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-6.png" alt="Cliente2"></div>
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-1.png" alt="Cliente2" class="cliente-img"></div>          
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-2.png" alt="Cliente2" class="cliente-img"></div>
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-3.png" alt="Cliente2" class="cliente-img"></div>
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-4.png" alt="Cliente2" class="cliente-img"></div>
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-5.png" alt="Cliente2" class="cliente-img"></div>
+          <div class="col-sm-4 col-lg-2"><img src="img/clientes/client-6.png" alt="Cliente2" class="cliente-img"></div>
         </div>
-      </div>
-
+    </div>
 
     <!-- Contenido principal -->
     <main>
         <!-- Sección sobre nosotros -->
-        <section id="sobre-nosotros">
-            <div>
+        <section id="sobre-nosotros" class="sobre-nosotros-section">
+            <div class="p-3 div__nosotros">
                 <h2 class="text-center">Nosotros</h2>
                 <div class="row">
-                    <div class="col">Solucsoft dispone de diversas unidades de negocio ampliamente especializadas en ofrecer <b>soluciones y servicios informáticos</b> eficientes en su correspondiente área de trabajo. Como consultoría informática ofrece, además, la posibilidad de un servicio integral, en lo que a Tecnologías de la Información se refiere, desde el <b>diseño del plan de sistemas de información hasta la implantación y mantenimiento</b> de los mismos, para que cualquier empresa u organización pueda contar con la solución informática adecuada y óptima en todo momento, y en línea con sus objetivos.</div>
-                    <div class="col">Las soluciones en esos casos pueden englobar diversas áreas de actuación de servicios informáticos, y serán ejecutadas desde distintas unidades de la compañía. Pero serán planificadas y puestas en marcha de manera unificada, encargándose nuestros profesionales de establecer una planificación de los servicios totalmente sincronizada, que el cliente vea como única.</div>                                    
+                    <div class="col sobre-nosotros-text">Solucsoft dispone de diversas unidades de negocio ampliamente especializadas en ofrecer <b>soluciones y servicios informáticos</b> eficientes en su correspondiente área de trabajo. Como consultoría informática ofrece, además, la posibilidad de un servicio integral, en lo que a Tecnologías de la Información se refiere, desde el <b>diseño del plan de sistemas de información hasta la implantación y mantenimiento</b> de los mismos, para que cualquier empresa u organización pueda contar con la solución informática adecuada y óptima en todo momento, y en línea con sus objetivos.</div>
+                    <div class="col sobre-nosotros-text">Las soluciones en esos casos pueden englobar diversas áreas de actuación de servicios informáticos, y serán ejecutadas desde distintas unidades de la compañía. Pero serán planificadas y puestas en marcha de manera unificada, encargándose nuestros profesionales de establecer una planificación de los servicios totalmente sincronizada, que el cliente vea como única.</div>                                    
                 </div>
                 <br>
                 <!-- Integración del video de YouTube -->
-                <div style="text-align: center;">
+                <div class="video-container" style="text-align: center;">
                     <iframe width="500" height="315" src="https://www.youtube.com/embed/2l7iG_08zEE?si=lstRQjvO-YZ7-aH5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div style="text-align: center;">
-                    <img src="programador.jpg" alt="Foto de programador" width="500" height="300">
+                <div class="image-container" style="text-align: center;">
+                    <img src="programador.jpg" alt="Foto de programador" width="500" height="300" class="programador-img">
                 </div>
             </div>
         </section>
-
-        <!-- Sección Proyectos -->
-        <section id="proyectos">
-            <h2 class="text-center">Proyectos</h2>
-            <div class="container">
-                <div class="row">
-                    <!-- Proyecto 1 -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card border-0">
-                            <img src="tiendaonline.png" class="card-img-top rounded" alt="Tienda en línea">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 1: Tienda en línea</h5>
-                                <p class="card-text">Desarrollo de una tienda en línea para una pequeña empresa local. El diseño y la implementación de una tienda virtual permite a una empresa ampliar sus ventas mediante el comercio electrónico de manera fácil, rápida y sencilla.</p>
-                                <a href="proyecto1.html" class="card-link">Leer más</a>
-                            </div>
-                        </div>
+<!-- Sección Proyectos -->
+<section id="proyectos" class="proyectos-section">
+    <h2 class="text-center">Proyectos</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 proyecto-card">
+                    <img src="tiendaonline.png" class="card-img-top rounded" alt="Tienda en línea">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1: Tienda en línea</h5>
+                        <p class="card-text">Desarrollo de una tienda en línea para una pequeña empresa local. El diseño y la implementación de una tienda virtual permite a una empresa ampliar sus ventas mediante el comercio electrónico de manera fácil, rápida y sencilla.</p>
+                        <a href="proyecto1.html" class="card-link">Leer más</a>
                     </div>
-                    
-                    <!-- Proyecto 2 -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card border-0">
-                            <img src="gestionproyectos2.jpg" class="card-img-top rounded" alt="Aplicación de Gestión">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 2: Aplicación de Gestión</h5>
-                                <p class="card-text">Aplicación web para la gestión de inventarios y ventas en tiempo real, facilitando la logística en la cadena de suministro y asegurando la fluidez entre la producción, comercialización y satisfacción del cliente.</p>
-                                <a href="proyecto2.html" class="card-link">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Proyecto 3 -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card border-0">
-                            <img src="blogpersonal.png" class="card-img-top rounded" alt="Blog Personal">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 3: Blog Personal</h5>
-                                <p class="card-text">Blog interactivo con sistema de comentarios y un panel de administración personalizado, ideal para compartir contenido desde una perspectiva personal o profesional.</p>
-                                <a href="proyecto3.html" class="card-link">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+                </div>
             </div>
-        </section>
+            
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 proyecto-card">
+                    <img src="gestionproyectos2.jpg" class="card-img-top rounded" alt="Aplicación de Gestión">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2: Aplicación de Gestión</h5>
+                        <p class="card-text">Aplicación web para la gestión de inventarios y ventas en tiempo real, facilitando la logística en la cadena de suministro y asegurando la fluidez entre la producción, comercialización y satisfacción del cliente.</p>
+                        <a href="proyecto2.html" class="card-link">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 proyecto-card">
+                    <img src="blogpersonal.png" class="card-img-top rounded" alt="Blog Personal">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3: Blog Personal</h5>
+                        <p class="card-text">Construcción de un blog interactivo con un sistema de comentarios dinámico. Esta solución es ideal para compartir contenido desde una perspectiva personal o profesional, permitiendo una gestión sencilla de publicaciones y su interacción activa</p>
+                        <a href="proyecto3.html" class="card-link">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
 
-        <!-- Sección de Contacto -->
-        <section id="contacto">
-            <h2 class="text-center">Contacto</h2>
-            <form action="/mensaje" method="POST">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <!-- Pie de página -->
-    <footer>
-        <div>
-            <p>&copy; 2024 Solucsoft. Todos los derechos reservados.</p>
-        </div>
-        <div>
-            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a> |
-            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a> | 
-            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a> | 
-            <a href="https://github.com" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-        </div>
-    </footer>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto-section">
+    <h2 class="text-center">Contacto</h2>
+    <form action="/mensaje" method="POST" class="contacto-form">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required class="form-control"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required class="form-control"><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required class="form-control"></textarea><br><br>
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+</main>
+<!-- Pie de página -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <p>&copy; 2024 Solucsoft. Todos los derechos reservados.</p>
+    </div>
+    <div class="social-links">
+        <a href="https://x.com" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i> Twitter-X</a> |
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="bi bi-facebook"></i> Facebook</a> | 
+        <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i> LinkedIn</a> | 
+        <a href="https://github.com" target="_blank" class="social-icon"><i class="bi bi-github"></i> GitHub</a>
+    </div>
+</footer>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
 </html>
